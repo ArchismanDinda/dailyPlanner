@@ -12,7 +12,7 @@ namespace WindowsFormsApplication1
 {
     public partial class formPopup : Form
     {
-        string time;
+        public static string time;
         public formPopup()
         {
             InitializeComponent();
@@ -30,8 +30,8 @@ namespace WindowsFormsApplication1
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
+            formPopup.time = timePicker.Value.ToShortTimeString();
             this.Close();
-            this.time = timePicker.Value.ToShortDateString();
         }
     }
 }
