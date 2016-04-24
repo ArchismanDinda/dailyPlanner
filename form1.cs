@@ -14,7 +14,7 @@ namespace WindowsFormsApplication1
     public partial class formTimeTable : Form
     {
 
-        string s = time;
+        string s = formPopup.time;
         public formTimeTable()
         {
             InitializeComponent();
@@ -65,7 +65,7 @@ namespace WindowsFormsApplication1
             //DateTime time = timePicker.Value;
             
             Label lbl = new Label();
-            lbl.Text = 
+            lbl.Text = s;
             lbl.Location = new System.Drawing.Point(205 + (100 * CMonTime), 75);
             CMonTime++;
             lbl.Size = new System.Drawing.Size(100, 25);
